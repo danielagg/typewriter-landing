@@ -41,7 +41,7 @@ export default class TypeWriter {
       // pause when written out full text for a bit
       typeSpeed = this.delay;
       this.isDeletingWords = true;
-    } else if (this.isDeletingWords && this.currentText == "") {
+    } else if (this.isDeletingWords && this.currentText === "") {
       // new round starts for next word
       this.isDeletingWords = false;
       this.wordIndex++;
