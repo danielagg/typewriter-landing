@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Hind:400,500,700&display=swap");
+@import "variables.css";
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
 
 body {
   font-family: "Hind", sans-serif;
   line-height: 1.6;
+  background: var(--main-bg);
+  color: var(--primary-color);
 }
 
 .landing-container {
@@ -23,7 +34,7 @@ body {
 }
 
 .landing-title-separator {
-  background: #d7e7f0;
+  background: var(--primary-blue);
   width: 50%;
   margin: -2em 0 3em 0;
   height: 1em;
@@ -41,7 +52,7 @@ body {
   right: -0.5rem;
   width: 4px;
   height: 75%;
-  background: black;
+  background: var(--primary-color);
   animation: pulse 0.8s infinite;
 }
 
@@ -60,6 +71,7 @@ body {
 .landing-description {
   margin: 0 0 0.5em 0;
   animation: moveInFromBottom 0.4s ease-out;
+  color: var(--faded-primary-color);
 }
 
 .landing-navigation {
@@ -78,20 +90,22 @@ body {
   position: relative;
   transition: 0.2s;
   cursor: pointer;
+  color: var(--link-color);
 }
 
 .landing-navigation ul li:hover {
-  color: #0269a4;
+  color: var(--hover-link-color);
 }
 
 .landing-navigation ul li::after {
   content: "";
   position: absolute;
-  background: #b0b0b0;
+  background: var(--link-color);
+  opacity: 0.7;
   top: 50%;
   right: 15%;
   width: 40%;
-  height: 2px;
+  height: 1px;
 }
 
 .landing-navigation ul li:last-of-type::after {
@@ -136,7 +150,7 @@ body {
     display: block;
     padding: 0.5em 0;
     margin: 0.2em 0;
-    background: #d7e7f0;
+    background: var(--primary-blue);
   }
 
   .landing-navigation ul li:hover {

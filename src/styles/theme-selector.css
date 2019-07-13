@@ -1,0 +1,29 @@
+@import "variables.css";
+
+.theme-selector-control {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--link-color);
+  padding: 0;
+  font: inherit;
+  display: flex;
+  justify-content: flex-start;
+  margin: 3em auto -5em auto;
+  width: 65%;
+}
+
+.theme-selector-icon {
+  margin: 5px 10px 0 0;
+}
+
+.theme-selector-control:hover {
+  color: var(--hover-link-color);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .theme-selector-control {
+    margin: 2em 0 1em 1em;
+  }
+}

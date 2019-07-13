@@ -1,9 +1,15 @@
 import React from "react";
-import "./styles.css";
+import "./styles/combined.css";
 import Landing from "./components/landing/Landing";
+import ThemeSelector from "./components/ThemeSelector";
 
 function App() {
-  return <Landing />;
+  return (
+    <>
+      <ThemeSelector />
+      <Landing />
+    </>
+  );
 }
 
 export default App;

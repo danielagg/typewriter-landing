@@ -1,0 +1,21 @@
+:root {
+  --main-bg: #fefefe;
+  --primary-color: #000000;
+  --faded-primary-color: #272727;
+
+  /* Blue */
+  --primary-blue: #d7e7f0;
+  --link-color: #41697e;
+  --hover-link-color: #6aa6c7;
+}
+
+:root[data-theme="dark"] {
+  --main-bg: #000;
+  --primary-color: #f8f8f8;
+  --faded-primary-color: #b4b4b4;
+
+  /* Blue */
+  --primary-blue: #173242;
+  --link-color: #41697e;
+  --hover-link-color: #6aa6c7;
+}
