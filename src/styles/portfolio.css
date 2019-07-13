@@ -1,0 +1,28 @@
+@import "variables.css";
+
+.portfolio-item-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  margin: 0 auto;
+  width: 65%;
+  padding-top: 0;
+}
+
+.portfolio-item-icon {
+  font-size: 15rem;
+}
+
+.portfolio-item-title {
+  font-size: 3rem;
+}
+
+.portfolio-item-sub-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.portfolio-item-desc {
+}

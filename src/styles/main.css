@@ -12,6 +12,7 @@ html.transition *:after {
 body {
   font-family: "Hind", sans-serif;
   line-height: 1.6;
+  margin: 0;
   background: var(--main-bg);
   color: var(--primary-color);
 }
