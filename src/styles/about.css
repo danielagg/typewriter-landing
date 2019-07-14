@@ -1,0 +1,26 @@
+@import "variables.css";
+
+.about-me-wrapper {
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-gap: 5rem;
+  align-items: center;
+  width: 65%;
+  padding-top: 0;
+}
+
+.about-me-left-container h1 {
+  font-size: 3rem;
+}
+
+.about-me-description {
+  color: var(--faded-primary-color);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .about-me-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

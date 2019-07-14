@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import TypeWriter from "../../typeWriter.js";
+import ThemeSelector from "../ThemeSelector";
 
 const Landing = () => {
   const initializeWriter = () => {
@@ -31,11 +32,12 @@ const Landing = () => {
         MERN stack.
       </p>
 
+      <ThemeSelector />
+
       <nav className="landing-navigation">
         <ul>
           <li>Work</li>
           <li>About</li>
-          <li>Contact</li>
         </ul>
       </nav>
     </div>

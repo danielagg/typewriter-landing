@@ -9,7 +9,19 @@ const PortfolioWrapper = () => {
         "This is a full stack application which keeps track of contact of its users.",
       descParagraph:
         "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
-      background: "#0269A4",
+      background: "#B22AF6",
+      color: "#FFFFFF",
+      icon: "fas fa-address-card",
+      viewOnlineLine: "",
+      githubLink: ""
+    },
+    {
+      title: "Museum",
+      descHeading:
+        "This is a full stack application which keeps track of contact of its users.",
+      descParagraph:
+        "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
+      background: "#D01A57",
       color: "#FFFFFF",
       icon: "fas fa-address-card",
       viewOnlineLine: "",
@@ -21,7 +33,7 @@ const PortfolioWrapper = () => {
         "This very website, a simple, serverless React App running on Zeit.",
       descParagraph:
         "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
-      background: "#000000",
+      background: "#50DBC4",
       color: "#FFFFFF",
       icon: "fas fa-map-marker-alt",
       viewOnlineLine: "",

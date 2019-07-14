@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Hind:400,500,700&display=swap");
 @import "variables.css";
+@import "animations.css";
 
 html.transition,
 html.transition *,
@@ -13,18 +14,19 @@ body {
   font-family: "Hind", sans-serif;
   line-height: 1.6;
   margin: 0;
+  padding: 0;
   background: var(--main-bg);
   color: var(--primary-color);
+  font-size: 110%;
 }
 
 .landing-container {
-  height: 101vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   width: 65%;
-  padding-top: 0;
 }
 
 .landing-typed-title {
@@ -57,18 +59,6 @@ body {
   animation: pulse 0.8s infinite;
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .landing-description {
   margin: 0 0 0.5em 0;
   animation: moveInFromBottom 0.4s ease-out;
@@ -76,7 +66,7 @@ body {
 }
 
 .landing-navigation {
-  margin-top: 2em;
+  margin-top: 4em;
   animation: moveInFromBottom 0.5s ease-out;
 }
 
@@ -85,9 +75,9 @@ body {
 }
 
 .landing-navigation ul li {
+  font-size: 1.4rem;
   display: inline-block;
-  padding: 0 5em 0 0;
-  margin: 0;
+  margin: 0 5em 0 0;
   position: relative;
   transition: 0.2s;
   cursor: pointer;
@@ -98,30 +88,8 @@ body {
   color: var(--hover-link-color);
 }
 
-.landing-navigation ul li::after {
-  content: "";
-  position: absolute;
-  background: var(--link-color);
-  opacity: 0.7;
-  top: 50%;
-  right: 15%;
-  width: 40%;
-  height: 1px;
-}
-
-.landing-navigation ul li:last-of-type::after {
-  display: none;
-}
-
-@keyframes moveInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+.landing-navigation ul li:hover::after {
+  transform: scaleY(10);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

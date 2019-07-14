@@ -9,6 +9,7 @@
   margin: 0 auto;
   width: 65%;
   padding-top: 0;
+  transition: background-color 700ms;
 }
 
 .portfolio-item-icon {
