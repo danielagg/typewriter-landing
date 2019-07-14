@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import TypeWriter from "../../typeWriter.js";
 import ThemeSelector from "../ThemeSelector";
+import * as Scroll from "react-scroll";
 
 const Landing = () => {
   const initializeWriter = () => {
@@ -36,8 +37,28 @@ const Landing = () => {
 
       <nav className="landing-navigation">
         <ul>
-          <li>Work</li>
-          <li>About</li>
+          <li>
+            <Scroll.Link
+              activeClass="active"
+              to="my-projects-anchor"
+              smooth={true}
+              offset={10}
+              duration={450}
+            >
+              Work
+            </Scroll.Link>
+          </li>
+          <li>
+            <Scroll.Link
+              activeClass="active"
+              to="about-me-anchor"
+              smooth={true}
+              offset={10}
+              duration={1200}
+            >
+              About
+            </Scroll.Link>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import * as Scroll from "react-scroll";
 import PortfolioItem from "./PortfolioItem";
 
 const PortfolioWrapper = () => {
@@ -43,9 +44,11 @@ const PortfolioWrapper = () => {
 
   return (
     <>
-      {workItems.map((item, index) => {
-        return <PortfolioItem key={index} item={item} />;
-      })}
+      <Scroll.Element name="my-projects-anchor">
+        {workItems.map((item, index) => {
+          return <PortfolioItem key={index} item={item} />;
+        })}
+      </Scroll.Element>
     </>
   );
 };

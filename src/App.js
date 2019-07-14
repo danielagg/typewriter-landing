@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/combined.css";
+import { CookiesProvider } from "react-cookie";
 
 // Components
 import Landing from "./components/landing/Landing";
@@ -9,9 +10,11 @@ import About from "./components/about/About";
 function App() {
   return (
     <>
-      <Landing />
-      <PortoflioWrapper />
-      <About />
+      <CookiesProvider>
+        <Landing />
+        <PortoflioWrapper />
+        <About />
+      </CookiesProvider>
     </>
   );
 }
