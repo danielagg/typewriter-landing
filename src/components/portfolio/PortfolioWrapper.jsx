@@ -6,9 +6,9 @@ const PortfolioWrapper = () => {
     {
       title: "Contact Keeper",
       descHeading:
-        "This is a full stack application which keeps track of contact of its users. Visitors are able to register (the passwords are securely stored using bcrypt in MongoDB). This needs another sentence here.",
+        "This is a full stack application which keeps track of contact of its users.",
       descParagraph:
-        "This is an application is using the MERN stack. The frontend is built with React (using the Context API for global state management). The backend is an ExpressJS application, connecting to MongoDB.",
+        "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
       background: "#0269A4",
       color: "#FFFFFF",
       icon: "fas fa-address-card",
@@ -16,11 +16,11 @@ const PortfolioWrapper = () => {
       githubLink: ""
     },
     {
-      title: "This site",
+      title: "Personal site",
       descHeading:
-        "This is a full stack application which keeps track of contact of its users. Visitors are able to register (the passwords are securely stored using bcrypt in MongoDB). This needs another sentence here.",
+        "This very website, a simple, serverless React App running on Zeit.",
       descParagraph:
-        "This is an application is using the MERN stack. The frontend is built with React (using the Context API for global state management). The backend is an ExpressJS application, connecting to MongoDB.",
+        "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
       background: "#000000",
       color: "#FFFFFF",
       icon: "fas fa-map-marker-alt",
