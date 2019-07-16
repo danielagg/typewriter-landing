@@ -17,10 +17,36 @@
 
 .about-me-description {
   color: var(--faded-primary-color);
+  padding-bottom: 0.8em;
+}
+
+.about-me-contact-list {
+  padding: 0.7em 0 0 0;
+}
+
+.about-me-contact-list-item {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.about-me-contact-list-item a {
+  margin-left: 0.5em;
+  font-weight: 700;
+  color: var(--faded-primary-color);
+}
+
+.about-me-contact-list-item a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .about-me-wrapper {
     grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 90%;
+  }
+
+  .about-me-left-container h1 {
+    font-size: 2rem;
   }
 }

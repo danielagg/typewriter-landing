@@ -23,7 +23,7 @@ const Landing = () => {
       <h1 className="landing-typed-title">
         <span className="landing-typed-title__typed" />
       </h1>
-      <hr className="landing-title-separator" />
+      <hr className="title-separator" />
       <p className="landing-description">
         I have experience with React, Redux and Material UI, in regards of
         frontend techs.

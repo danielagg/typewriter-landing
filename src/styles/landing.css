@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.landing-title-separator {
+.title-separator {
   background: var(--primary-color);
   opacity: 0.15;
   width: 50%;
@@ -61,13 +61,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  body {
-    line-height: 2;
-  }
   .landing-container {
     justify-content: flex-start;
     width: 90%;
     padding-top: 1.5rem;
+    height: 100%;
   }
 
   .landing-typed-title {
@@ -80,17 +78,5 @@
 
   .landing-navigation {
     margin-top: 1.8em;
-    text-align: center;
-  }
-
-  .landing-navigation ul li {
-    display: block;
-    padding: 0.5em 0;
-    margin: 0.5em 0;
-  }
-
-  .landing-navigation ul li:hover::after {
-    -webkit-transform-origin: center;
-    transform-origin: center;
   }
 }

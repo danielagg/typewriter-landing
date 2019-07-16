@@ -7,14 +7,14 @@ const About = () => {
       <div className="about-me-wrapper">
         <div className="about-me-left-container">
           <h1>About Me</h1>
-          <hr className="landing-title-separator" />
+          <hr className="title-separator" />
           <p className="about-me-description">
             If you'd like to contact me, please do so through either through
             LinkedIn, or via GitHub:
           </p>
-          <ul>
-            <li>
-              <i class="fab fa-linkedin" />
+          <ul className="about-me-contact-list">
+            <li className="about-me-contact-list-item">
+              <i className="fab fa-linkedin" />
               <a
                 href="https://www.linkedin.com/in/danielagg/"
                 target="_blank"
@@ -23,8 +23,8 @@ const About = () => {
                 LinkedIn
               </a>
             </li>
-            <li>
-              <i class="fab fa-github" />
+            <li className="about-me-contact-list-item">
+              <i className="fab fa-github" />
               <a
                 href="https://github.com/danielagg/"
                 target="_blank"
