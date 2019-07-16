@@ -3,6 +3,11 @@
   --primary-color: #000000;
   --faded-primary-color: #272727;
   --lighest-primary-color: #ebebeb;
+
+  /* Portfolio item colors */
+  --portfolio-item-green: #d7ffbd;
+  --portfolio-item-blue: #bdceff;
+  --portfolio-item-purple: #ffbdeb;
 }
 
 :root[data-theme="dark"] {
@@ -10,4 +15,9 @@
   --primary-color: #f8f8f8;
   --faded-primary-color: #b4b4b4;
   --lighest-primary-color: #2c2c2c;
+
+  /* Portfolio item colors */
+  --portfolio-item-green: #252b21;
+  --portfolio-item-blue: #191c24;
+  --portfolio-item-purple: #291c25;
 }

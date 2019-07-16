@@ -1,7 +1,6 @@
 @import "variables.css";
 
 .portfolio-items-wrapper {
-  /* background: var(--lighest-primary-color); */
   height: 100vh;
 }
 
@@ -9,9 +8,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   grid-column-gap: 2em;
-  /* justify-items: center; */
   align-items: center;
   width: 100%;
   margin: 0 auto;
@@ -20,12 +17,24 @@
 .portfolio-item-icon-container {
   height: 100%;
   width: 100%;
-  grid-row: 1 / span 2;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
 }
+
+.portfolio-item-icon-container--green {
+  background: var(--portfolio-item-green);
+}
+
+.portfolio-item-icon-container--blue {
+  background: var(--portfolio-item-blue);
+}
+
+.portfolio-item-icon-container--purple {
+  background: var(--portfolio-item-purple);
+}
+
 .portfolio-item-icon {
   font-size: 20em;
   opacity: 0.5;
@@ -47,10 +56,36 @@
 .portfolio-item-navigation {
   margin: 0;
   padding: 0;
+  grid-row: 1;
 }
 
 .portfolio-item-navigation li {
   display: inline-block;
   margin: -1em;
   padding: 0;
+}
+
+.portfolio-item-links-list {
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+.portfolio-item-links-list-item {
+  display: block;
+  margin: 4em 0 0.5em 0;
+}
+
+.portfolio-item-links-list-item--github {
+  margin-top: 2em;
+  display: block;
+}
+
+.portfolio-item-github-link {
+  font-weight: 700;
+  color: var(--faded-primary-color);
+  margin-left: 0.5em;
+}
+
+.portfolio-item-github-link:hover {
+  text-decoration: underline;
 }

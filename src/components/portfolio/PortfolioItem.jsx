@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Colors from "./Colors";
 
 const PortfolioItem = props => {
   const { item, nextClickEmitEvent, prevClickEmitEvent } = props;
@@ -8,17 +9,23 @@ const PortfolioItem = props => {
     descSubHeading,
     descParagraph,
     icon,
-    background,
+    colorType,
     viewOnlineLine,
     githubLink
   } = item;
+
+  const getConvertedColorCssClassName = () => {
+    return colorType.toLowerCase();
+  };
 
   return (
     <div className="portfolio-items-wrapper">
       <div className="portfolio-item-container">
         <span
-          className="portfolio-item-icon-container"
-          style={{ background: background }}
+          className={
+            "portfolio-item-icon-container portfolio-item-icon-container--" +
+            getConvertedColorCssClassName()
+          }
         >
           <i className={"portfolio-item-icon " + icon} />
         </span>
@@ -42,28 +49,28 @@ const PortfolioItem = props => {
             </li>
           </ul>
 
-          <h1 className="portfolio-item-title">{title}</h1>
-          <h2 className="portfolio-item-sub-heading">{descSubHeading}</h2>
-          <p className="portfolio-item-desc">{descParagraph}</p>
+          <div>
+            <h1 className="portfolio-item-title">{title}</h1>
+            <h2 className="portfolio-item-sub-heading">{descSubHeading}</h2>
+            <p className="portfolio-item-desc">{descParagraph}</p>
 
-          <ul className="portfolio-item-links-list">
-            <li className="portfolio-item-links-list-item">
-              <a
-                className="sliding-button sliding-button--thick"
-                href={viewOnlineLine}
-              >
-                View Online
-              </a>
-            </li>
-            <li className="portfolio-item-links-list-item">
-              <a
-                className="sliding-button sliding-button--thick"
-                href={githubLink}
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
+            <ul className="portfolio-item-links-list">
+              <li className="portfolio-item-links-list-item">
+                <a
+                  className="sliding-button sliding-button--thick"
+                  href={viewOnlineLine}
+                >
+                  Visit app
+                </a>
+              </li>
+              <li className="portfolio-item-links-list-item portfolio-item-links-list-item--github">
+                <i className="fab fa-github" />
+                <a className="portfolio-item-github-link" href={githubLink}>
+                  View source on GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

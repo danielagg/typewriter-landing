@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Scroll from "react-scroll";
 import PortfolioItem from "./PortfolioItem";
+import Colors from "./Colors";
 
 const PortfolioWrapper = () => {
   const workItems = [
@@ -11,7 +12,7 @@ const PortfolioWrapper = () => {
         "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
       descParagraph:
         "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
-      background: "#d7ffbd",
+      colorType: Colors.GREEN,
       icon: "fas fa-shopping-basket",
       viewOnlineLine: "",
       githubLink: ""
@@ -23,7 +24,7 @@ const PortfolioWrapper = () => {
         "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
       descParagraph:
         "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
-      background: "#bdceff",
+      colorType: Colors.BLUE,
       icon: "fas fa-address-card",
       viewOnlineLine: "",
       githubLink: ""
@@ -35,7 +36,7 @@ const PortfolioWrapper = () => {
         "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
       descParagraph:
         "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
-      background: "#ffbdeb",
+      colorType: Colors.PURPLE,
       icon: "fas fa-map-marker-alt",
       viewOnlineLine: "",
       githubLink: ""
