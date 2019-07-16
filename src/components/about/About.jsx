@@ -9,32 +9,55 @@ const About = () => {
           <h1>About Me</h1>
           <hr className="landing-title-separator" />
           <p className="about-me-description">
-            Morbi est nulla, tincidunt eu hendrerit eget, maximus id velit. Nunc
-            porta venenatis nunc, vitae.
+            If you'd like to contact me, please do so through either through
+            LinkedIn, or via GitHub:
           </p>
-          <span>
-            <a href="#">Download CV</a>
-          </span>
+          <ul>
+            <li>
+              <i class="fab fa-linkedin" />
+              <a
+                href="https://www.linkedin.com/in/danielagg/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <i class="fab fa-github" />
+              <a
+                href="https://github.com/danielagg/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="about-me-right-container">
           <p className="about-me-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi est
-            nulla, tincidunt eu hendrerit eget, maximus id velit. Nunc porta
-            venenatis nunc, vitae cursus mi bibendum et.
+            I'm a 23 year old Hungarian full stack developer, with more than 3
+            years of professional experience, spent in an enterprise
+            environment.
           </p>
 
           <p className="about-me-description">
-            Proin nec purus sed nisl feugiat placerat. Proin quis ultrices quam.
-            Sed id eros molestie, laoreet quam at, sodales libero. Etiam
-            faucibus enim vel nisl imperdiet viverra. Vivamus aliquet nibh nec
-            lacus sagittis, in tempus urna sagittis. Nullam nec volutpat arcu.
+            Acted as the deputy to the Technical Team Lead in a team of 6-9
+            developers in a SCRUM team (duties included code reviews,
+            coordinating the development of major change requests)
           </p>
 
-          <ul>
-            <li>LinkedIn</li>
-            <li>GitHub</li>
-            <li>Twitter</li>
-          </ul>
+          <p className="about-me-description">
+            For a complete list of my experiences and skills, please see my
+            resumé.
+          </p>
+
+          <span>
+            <a className="sliding-button" href="#">
+              Download CV (PDF)
+            </a>
+          </span>
         </div>
       </div>
     </Scroll.Element>

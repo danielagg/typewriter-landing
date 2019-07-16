@@ -37,7 +37,7 @@ const Landing = () => {
 
       <nav className="landing-navigation">
         <ul>
-          <li>
+          <li className="sliding-button">
             <Scroll.Link
               activeClass="active"
               to="my-projects-anchor"
@@ -45,10 +45,10 @@ const Landing = () => {
               offset={10}
               duration={450}
             >
-              Work
+              Work <span className="landing-navigation-item-arrow">&rarr;</span>
             </Scroll.Link>
           </li>
-          <li>
+          <li className="sliding-button">
             <Scroll.Link
               activeClass="active"
               to="about-me-anchor"
@@ -56,7 +56,8 @@ const Landing = () => {
               offset={10}
               duration={1200}
             >
-              About
+              About{" "}
+              <span className="landing-navigation-item-arrow">&rarr;</span>
             </Scroll.Link>
           </li>
         </ul>

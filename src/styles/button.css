@@ -1,0 +1,43 @@
+@import "variables.css";
+
+.sliding-button {
+  display: inline-block;
+  margin-right: 3em;
+  cursor: pointer;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.7em 2em;
+  position: relative;
+  z-index: 1;
+  transition: 500ms;
+}
+
+.sliding-button:hover {
+  color: var(--main-bg);
+}
+
+.sliding-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+
+.sliding-button:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
