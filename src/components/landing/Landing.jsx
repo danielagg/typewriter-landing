@@ -37,24 +37,22 @@ const Landing = () => {
 
       <nav className="landing-navigation">
         <ul>
-          <li className="sliding-button">
+          <li className="sliding-button sliding-button--thick">
             <Scroll.Link
               activeClass="active"
               to="my-projects-anchor"
               smooth={true}
-              offset={80}
               duration={450}
             >
               Work <span className="landing-navigation-item-arrow">&rarr;</span>
             </Scroll.Link>
           </li>
-          <li className="sliding-button">
+          <li className="sliding-button sliding-button--thick">
             <Scroll.Link
               activeClass="active"
               to="about-me-anchor"
               smooth={true}
-              offset={10}
-              duration={1200}
+              duration={600}
             >
               About{" "}
               <span className="landing-navigation-item-arrow">&rarr;</span>

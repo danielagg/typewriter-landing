@@ -54,7 +54,7 @@ const About = () => {
           </p>
 
           <span>
-            <a className="sliding-button" href="#">
+            <a className="sliding-button sliding-button--thick" href="#">
               Download CV (PDF)
             </a>
           </span>

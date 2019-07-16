@@ -4,7 +4,6 @@
   display: inline-block;
   margin-right: 3em;
   cursor: pointer;
-  border: 2px solid var(--primary-color);
   color: var(--primary-color);
   padding: 0.7em 2em;
   position: relative;
@@ -40,6 +39,18 @@
   transform: scaleX(1);
   -webkit-transform-origin: left;
   transform-origin: left;
+}
+
+.sliding-button--thick {
+  border: 2px solid var(--primary-color);
+}
+
+.sliding-button--thin {
+  border: 1px solid var(--primary-color);
+}
+
+.sliding-button--no-border {
+  border: none;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
