@@ -42,7 +42,7 @@ const Landing = () => {
               activeClass="active"
               to="my-projects-anchor"
               smooth={true}
-              offset={10}
+              offset={80}
               duration={450}
             >
               Work <span className="landing-navigation-item-arrow">&rarr;</span>

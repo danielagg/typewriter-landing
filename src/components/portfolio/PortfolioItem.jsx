@@ -7,41 +7,37 @@ const PortfolioItem = props => {
     title,
     descHeading,
     descParagraph,
-    background,
-    color,
     icon,
+    background,
     viewOnlineLine,
     githubLink
   } = item;
 
   return (
     <div style={{ background: background }}>
-      <div className="portfolio-item-wrapper">
-        <span>
-          <i
-            className={"portfolio-item-icon " + icon}
-            style={{ color: color }}
-          />
-        </span>
-        <div>
-          <h1 className="portfolio-item-title" style={{ color: color }}>
-            {title}
-          </h1>
-          <h2 className="portfolio-item-sub-title" style={{ color: color }}>
-            {descHeading}
-          </h2>
-          <p className="portfolio-item-desc" style={{ color: color }}>
-            {descParagraph}
-          </p>
+      <div className="portfolio-item-outer-container">
+        <div className="portfolio-item-container">
+          <span>
+            <i className={"portfolio-item-icon " + icon} />
+          </span>
+          <div className="portfolio-item-description-container">
+            <h1 className="portfolio-item-title">{title}</h1>
+            <h2 className="portfolio-item-sub-title">{descHeading}</h2>
+            <p className="portfolio-item-desc">{descParagraph}</p>
 
-          <ul>
-            <li>
-              <a href={viewOnlineLine}>View Online</a>{" "}
-            </li>
-            <li>
-              <a href={githubLink}>GitHub</a>{" "}
-            </li>
-          </ul>
+            <ul className="portfolio-item-links-list">
+              <li className="portfolio-item-links-list-item">
+                <a className="sliding-button" href={viewOnlineLine}>
+                  View Online
+                </a>
+              </li>
+              <li className="portfolio-item-links-list-item">
+                <a className="sliding-button" href={githubLink}>
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

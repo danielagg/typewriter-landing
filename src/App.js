@@ -12,7 +12,7 @@ function App() {
     <>
       <CookiesProvider>
         <Landing />
-        {/* <PortoflioWrapper /> */}
+        <PortoflioWrapper />
         <About />
       </CookiesProvider>
     </>
