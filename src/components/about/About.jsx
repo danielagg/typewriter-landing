@@ -9,8 +9,8 @@ const About = () => {
           <h1>About Me</h1>
           <hr className="title-separator" />
           <p className="about-me-description">
-            If you'd like to contact me, please do so through either through
-            LinkedIn, or via GitHub:
+            If you'd like to contact me, please do so through either LinkedIn,
+            or via GitHub.
           </p>
           <ul className="about-me-contact-list">
             <li className="about-me-contact-list-item">
@@ -37,25 +37,25 @@ const About = () => {
         </div>
         <div className="about-me-right-container">
           <p className="about-me-description">
-            I'm a 23 year old Hungarian full stack developer, with more than 3
-            years of professional experience, spent in an enterprise
-            environment.
+            I'm a Hungarian full stack developer, with more than 3 years of
+            professional experience, spent in an enterprise environment.
           </p>
 
           <p className="about-me-description">
-            Acted as the deputy to the Technical Team Lead in a team of 6-9
-            developers in a SCRUM team (duties included code reviews,
-            coordinating the development of major change requests)
+            During this time, I acted as the deputy to the Technical Team Lead
+            in a SCRUM team of 6-9 devs - my duties included coordinating the
+            development of major change requests, completing code reviews and
+            offering general architectural and technical guidance.
           </p>
 
           <p className="about-me-description">
-            For a complete list of my experiences and skills, please see my
+            For a complete list of my experiences and skills, please refer to my
             resumé.
           </p>
 
           <span>
             <a className="sliding-button sliding-button--thick" href="#">
-              Download CV (PDF)
+              Download CV (pdf)
             </a>
           </span>
         </div>

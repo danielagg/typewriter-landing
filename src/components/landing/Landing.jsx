@@ -37,27 +37,28 @@ const Landing = () => {
 
       <nav className="landing-navigation">
         <ul>
-          <li className="sliding-button sliding-button--thick">
-            <Scroll.Link
-              activeClass="active"
-              to="my-projects-anchor"
-              smooth={true}
-              duration={450}
-            >
+          <Scroll.Link
+            activeClass="active"
+            to="my-projects-anchor"
+            smooth={true}
+            duration={450}
+          >
+            <li className="sliding-button sliding-button--thick">
               Work <span className="landing-navigation-item-arrow">&rarr;</span>
-            </Scroll.Link>
-          </li>
-          <li className="sliding-button sliding-button--thick">
-            <Scroll.Link
-              activeClass="active"
-              to="about-me-anchor"
-              smooth={true}
-              duration={600}
-            >
+            </li>
+          </Scroll.Link>
+
+          <Scroll.Link
+            activeClass="active"
+            to="about-me-anchor"
+            smooth={true}
+            duration={600}
+          >
+            <li className="sliding-button sliding-button--thick">
               About{" "}
               <span className="landing-navigation-item-arrow">&rarr;</span>
-            </Scroll.Link>
-          </li>
+            </li>
+          </Scroll.Link>
         </ul>
       </nav>
     </div>

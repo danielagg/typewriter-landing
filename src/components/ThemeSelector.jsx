@@ -53,7 +53,9 @@ const ThemeSelector = () => {
               : "theme-selector-icon fas fa-sun"
           }
         />{" "}
-        change theme to {currentTheme === "light" ? "dark" : "light"}
+        <span className="theme-selector-text">
+          change theme to {currentTheme === "light" ? "dark" : "light"}.
+        </span>
       </button>
     </div>
   );

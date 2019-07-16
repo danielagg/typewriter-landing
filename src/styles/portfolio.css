@@ -51,6 +51,11 @@
 
 .portfolio-item-sub-heading {
   font-size: 1.3rem;
+  color: var(--faded-primary-color);
+}
+
+.portfolio-item-desc {
+  color: var(--faded-primary-color);
 }
 
 .portfolio-item-navigation {
@@ -88,4 +93,29 @@
 
 .portfolio-item-github-link:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .portfolio-item-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .portfolio-item-title {
+    font-size: 2rem;
+  }
+
+  .portfolio-item-icon {
+    font-size: 5em;
+    opacity: 0.5;
+  }
+
+  .portfolio-item-description-container {
+    width: 90%;
+    padding-left: 0;
+  }
 }

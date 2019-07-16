@@ -9,9 +9,9 @@ const PortfolioWrapper = () => {
       id: 0,
       title: "Guitar Store",
       descSubHeading:
-        "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
+        "Dockerized ASP.NET Core backend, using PostgreSQL, with a React + Redux frontend.",
       descParagraph:
-        "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
+        "A hobby project for a webshop of an imaginery guitar store. Using .NET Core 3 preview, connecting to a PostgreSQL database with Entity Framework Core. The frontend is a React application, using Redux for its global state management.",
       colorType: Colors.GREEN,
       icon: "fas fa-shopping-basket",
       viewOnlineLine: "",
@@ -20,8 +20,7 @@ const PortfolioWrapper = () => {
     {
       id: 1,
       title: "Contact Keeper",
-      descSubHeading:
-        "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
+      descSubHeading: "A contact-storing app, using the MERN stack.",
       descParagraph:
         "The MERN stack was used for the application. Passwords are stored securely in MongoDB, using bcrypt. For the frontend's global state management, the Context API was used.",
       colorType: Colors.BLUE,
@@ -33,7 +32,7 @@ const PortfolioWrapper = () => {
       id: 2,
       title: "Personal site",
       descSubHeading:
-        "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
+        "This site exact website, state and serverless React app deployed to Zeit.",
       descParagraph:
         "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
       colorType: Colors.PURPLE,
