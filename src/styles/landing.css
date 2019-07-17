@@ -1,7 +1,7 @@
 @import "variables.css";
 @import "animations.css";
 
-.landing-container {
+.landing__container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,14 +10,14 @@
   width: 65%;
 }
 
-.landing-typed-title {
+.landing__typed-title {
   font-size: 3rem;
   min-height: 5rem;
   min-width: 40%;
   position: relative;
 }
 
-.title-separator {
+.landing__title-separator {
   background: var(--primary-color);
   opacity: 0.15;
   width: 50%;
@@ -26,11 +26,11 @@
   border: none;
 }
 
-.landing-typed-title__typed {
+.landing__typed-title_programatically_written {
   position: relative;
 }
 
-.landing-typed-title__typed::after {
+.landing__typed-title_programatically_written::after {
   content: "";
   position: absolute;
   top: 5%;
@@ -41,42 +41,42 @@
   animation: pulse 0.8s infinite;
 }
 
-.landing-description {
+.landing__description {
   margin: 0 0 0.5em 0;
   animation: moveInFromBottom 0.4s ease-out;
   color: var(--faded-primary-color);
 }
 
-.landing-navigation {
+.landing__navigation {
   margin-top: 3em;
   animation: moveInFromBottom 0.5s ease-out;
 }
 
-.landing-navigation ul {
+.landing__navigation-list {
   padding: 0;
 }
 
-.landing-navigation-item-arrow {
+.landing__navigation-item-arrow {
   padding-left: 0.7em;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .landing-container {
+  .landing__container {
     justify-content: flex-start;
     width: 90%;
     padding-top: 1.5rem;
     height: 100%;
   }
 
-  .landing-typed-title {
+  .landing__typed-title {
     font-size: 2rem;
   }
 
-  .landing-description {
+  .landing__description {
     margin: 0 0 1em 0;
   }
 
-  .landing-navigation {
+  .landing__navigation {
     margin-top: 1.8em;
   }
 }

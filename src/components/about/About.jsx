@@ -40,14 +40,15 @@ const About = () => {
         <div className="about-me__right-container">
           <p className="about-me__description">
             I'm a Hungarian full stack developer, with more than 3 years of
-            professional experience, spent in an enterprise environment.
+            professional experience, gained in an enterprise environment.
           </p>
 
           <p className="about-me__description">
             During this time, I acted as the deputy to the Technical Team Lead
-            in a SCRUM team of 6-9 devs - my duties included coordinating the
-            development of major change requests, completing code reviews and
-            offering general architectural and technical guidance.
+            in a SCRUM team of 6-9 devs. My duties included taking
+            responsibility for the development of major change requests,
+            completing code reviews and offering general architectural and
+            technical guidance.
           </p>
 
           <p className="about-me__description">

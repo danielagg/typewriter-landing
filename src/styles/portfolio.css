@@ -1,11 +1,11 @@
 @import "variables.css";
 
-.portfolio-items-wrapper {
+.portfolio-items {
   height: 100vh;
 }
 
-.portfolio-item-container {
-  height: 100vh;
+.portfolio-items__container {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2em;
@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 
-.portfolio-item-icon-container {
+.portfolio-items__icon-container {
   height: 100%;
   width: 100%;
   display: grid;
@@ -23,26 +23,41 @@
   align-items: center;
 }
 
-.portfolio-item-icon-container--green {
+.portfolio-items__icon-container--green {
   background: var(--portfolio-item-green);
 }
 
-.portfolio-item-icon-container--blue {
+.portfolio-items__icon-container--blue {
   background: var(--portfolio-item-blue);
 }
 
-.portfolio-item-icon-container--purple {
+.portfolio-items__icon-container--purple {
   background: var(--portfolio-item-purple);
 }
 
-.portfolio-item-icon {
+.portfolio-item__icon {
   font-size: 20em;
   opacity: 0.5;
 }
 
-.portfolio-item-description-container {
+.portfolio-item__description-container {
   width: 65%;
   padding-left: 1em;
+  position: relative;
+}
+
+.portfolio-item__navigation {
+  margin: 0;
+  padding: 0;
+  grid-row: 1;
+  position: absolute;
+  top: 0;
+}
+
+.portfolio-item__navigation-list-item {
+  display: inline-block;
+  margin: -1em;
+  padding: 0;
 }
 
 .portfolio-item-title {
@@ -58,46 +73,33 @@
   color: var(--faded-primary-color);
 }
 
-.portfolio-item-navigation {
-  margin: 0;
-  padding: 0;
-  grid-row: 1;
-}
-
-.portfolio-item-navigation li {
-  display: inline-block;
-  margin: -1em;
-  padding: 0;
-}
-
-.portfolio-item-links-list {
+.portfolio-item__view-more-list {
   margin: 2em 0 0 0;
   padding: 0;
 }
 
-.portfolio-item-links-list-item {
+.portfolio-item__view-more-list-item {
   display: block;
   margin: 4em 0 0.5em 0;
 }
 
-.portfolio-item-links-list-item--github {
+.portfolio-item__view-more-list-item--github {
   margin-top: 2em;
   display: block;
 }
 
-.portfolio-item-github-link {
+.portfolio-item__github-link {
   font-weight: 700;
   color: var(--faded-primary-color);
   margin-left: 0.5em;
 }
 
-.portfolio-item-github-link:hover {
+.portfolio-item__github-link:hover {
   text-decoration: underline;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .portfolio-item-container {
-    height: 100%;
+  .portfolio-items__container {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -105,16 +107,16 @@
     margin: 0 auto;
   }
 
-  .portfolio-item-title {
+  .portfolio-item__title {
     font-size: 2rem;
   }
 
-  .portfolio-item-icon {
+  .portfolio-item__icon {
     font-size: 5em;
     opacity: 0.5;
   }
 
-  .portfolio-item-description-container {
+  .portfolio-item__description-container {
     width: 90%;
     padding-left: 0;
   }

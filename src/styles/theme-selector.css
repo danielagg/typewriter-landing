@@ -1,7 +1,7 @@
 @import "variables.css";
 @import "animations.css";
 
-.theme-selector-control {
+.theme-selector {
   cursor: pointer;
   background: none;
   border: none;
@@ -17,16 +17,16 @@
   margin-top: 0.5em;
 }
 
-.theme-selector-icon {
+.theme-selector__icon {
   margin: 0.1em 1em 0 0;
 }
 
-.theme-selector-text:hover {
+.theme-selector__text:hover {
   text-decoration: underline;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .theme-selector-control {
+  .theme-selector {
     margin: 1em 0 0 0;
   }
 }

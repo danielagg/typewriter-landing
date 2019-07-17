@@ -5,7 +5,9 @@ import * as Scroll from "react-scroll";
 
 const Landing = () => {
   const initializeWriter = () => {
-    const textElement = document.querySelector(".landing-typed-title__typed");
+    const textElement = document.querySelector(
+      ".landing__typed-title_programatically_written"
+    );
 
     new TypeWriter(
       textElement,
@@ -19,24 +21,24 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="landing-container">
-      <h1 className="landing-typed-title">
-        <span className="landing-typed-title__typed" />
+    <div className="landing__container">
+      <h1 className="landing__typed-title">
+        <span className="landing__typed-title_programatically_written" />
       </h1>
-      <hr className="title-separator" />
-      <p className="landing-description">
+      <hr className="landing__title-separator" />
+      <p className="landing__description">
         I have experience with React, Redux and Material UI, in regards of
         frontend techs.
       </p>
-      <p className="landing-description">
+      <p className="landing__description">
         My backend experience includes Azure, as well as Node and Express - the
         MERN stack.
       </p>
 
       <ThemeSelector />
 
-      <nav className="landing-navigation">
-        <ul>
+      <nav className="landing__navigation">
+        <ul className="landing__navigation-list">
           <Scroll.Link
             activeClass="active"
             to="my-projects-anchor"
@@ -44,7 +46,8 @@ const Landing = () => {
             duration={450}
           >
             <li className="sliding-button sliding-button--left-to-right sliding-button--thick-border">
-              Work <span className="landing-navigation-item-arrow">&rarr;</span>
+              Work{" "}
+              <span className="landing__navigation-item-arrow">&rarr;</span>
             </li>
           </Scroll.Link>
 
@@ -56,7 +59,7 @@ const Landing = () => {
           >
             <li className="sliding-button sliding-button--left-to-right sliding-button--thick-border">
               About{" "}
-              <span className="landing-navigation-item-arrow">&rarr;</span>
+              <span className="landing__navigation-item-arrow">&rarr;</span>
             </li>
           </Scroll.Link>
         </ul>

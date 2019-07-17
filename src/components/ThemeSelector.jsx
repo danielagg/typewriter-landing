@@ -45,15 +45,15 @@ const ThemeSelector = () => {
 
   return (
     <div>
-      <button className="theme-selector-control" onClick={onChangeTheme}>
+      <button className="theme-selector" onClick={onChangeTheme}>
         <i
           className={
             currentTheme === "light"
-              ? "theme-selector-icon fas fa-moon"
-              : "theme-selector-icon fas fa-sun"
+              ? "theme-selector__icon fas fa-moon"
+              : "theme-selector__icon fas fa-sun"
           }
         />{" "}
-        <span className="theme-selector-text">
+        <span className="theme-selector__text">
           change theme to {currentTheme === "light" ? "dark" : "light"}.
         </span>
       </button>

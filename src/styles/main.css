@@ -26,6 +26,7 @@ a {
 button {
   background: none;
   border: none;
+  outline: none;
 }
 
 ::selection {
