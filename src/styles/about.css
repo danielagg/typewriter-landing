@@ -11,31 +11,40 @@
   padding-top: 0;
 }
 
-.about-me-left-container h1 {
+.about-me__title {
   font-size: 3rem;
 }
 
-.about-me-description {
+.about-me__title-separator {
+  background: var(--primary-color);
+  opacity: 0.15;
+  width: 50%;
+  margin: -2em 0 3em 0;
+  height: 3px;
+  border: none;
+}
+
+.about-me__description {
   color: var(--faded-primary-color);
   padding-bottom: 0.8em;
 }
 
-.about-me-contact-list {
+.about-me__contact-list {
   padding: 0.7em 0 0 0;
 }
 
-.about-me-contact-list-item {
+.about-me__contact-list-item {
   display: block;
   margin-bottom: 0.5em;
 }
 
-.about-me-contact-list-item a {
+.about-me__contact-list-item-link {
   margin-left: 0.5em;
   font-weight: 700;
   color: var(--faded-primary-color);
 }
 
-.about-me-contact-list-item a:hover {
+.about-me__contact-list-item-link:hover {
   text-decoration: underline;
 }
 
@@ -46,7 +55,7 @@
     width: 90%;
   }
 
-  .about-me-left-container h1 {
+  .about-me__title {
     font-size: 2rem;
   }
 }

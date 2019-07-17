@@ -43,7 +43,7 @@ const Landing = () => {
             smooth={true}
             duration={450}
           >
-            <li className="sliding-button sliding-button--thick">
+            <li className="sliding-button sliding-button--left-to-right sliding-button--thick-border">
               Work <span className="landing-navigation-item-arrow">&rarr;</span>
             </li>
           </Scroll.Link>
@@ -54,7 +54,7 @@ const Landing = () => {
             smooth={true}
             duration={600}
           >
-            <li className="sliding-button sliding-button--thick">
+            <li className="sliding-button sliding-button--left-to-right sliding-button--thick-border">
               About{" "}
               <span className="landing-navigation-item-arrow">&rarr;</span>
             </li>

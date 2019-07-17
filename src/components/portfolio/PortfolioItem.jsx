@@ -33,7 +33,7 @@ const PortfolioItem = props => {
           <ul className="portfolio-item-navigation">
             <li>
               <button
-                className="sliding-button sliding-button--no-border"
+                className="sliding-button sliding-button--right-to-left sliding-button--no-border"
                 onClick={nextClickEmitEvent}
               >
                 &larr;
@@ -41,7 +41,7 @@ const PortfolioItem = props => {
             </li>
             <li>
               <button
-                className="sliding-button sliding-button--no-border"
+                className="sliding-button sliding-button--left-to-right sliding-button--no-border"
                 onClick={prevClickEmitEvent}
               >
                 &rarr;
@@ -57,7 +57,7 @@ const PortfolioItem = props => {
             <ul className="portfolio-item-links-list">
               <li className="portfolio-item-links-list-item">
                 <a
-                  className="sliding-button sliding-button--thick"
+                  className="sliding-button sliding-button--left-to-right sliding-button--thick-border"
                   href={viewOnlineLine}
                 >
                   Visit app
