@@ -1,0 +1,34 @@
+@import "variables.css";
+
+.portfolio-items__icon-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.portfolio-items__icon-container--green {
+  background: var(--portfolio-item-green);
+}
+
+.portfolio-items__icon-container--blue {
+  background: var(--portfolio-item-blue);
+}
+
+.portfolio-items__icon-container--purple {
+  background: var(--portfolio-item-purple);
+}
+
+.portfolio-item__icon {
+  font-size: 20em;
+  opacity: 0.5;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .portfolio-item__icon {
+    font-size: 5em;
+    opacity: 0.5;
+  }
+}
