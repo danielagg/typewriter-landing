@@ -12,7 +12,7 @@
   font-size: 100%;
   display: flex;
   justify-content: flex-start;
-  width: 65%;
+  width: 100%;
   animation: moveInFromBottom 0.4s ease-out;
   margin-top: 0.5em;
 }
@@ -27,6 +27,16 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .theme-selector {
-    margin: 1em 0 0 0;
+    display: block;
+    padding: 1em 0;
+    margin: 0.5em 0;
+    text-align: center;
+    font-weight: 300;
+    background: var(--faded-primary-color);
+    color: var(--main-bg);
+  }
+
+  .theme-selector__text:hover {
+    text-decoration: none;
   }
 }

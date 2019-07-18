@@ -7,11 +7,11 @@ const PortfolioWrapper = () => {
   const workItems = [
     {
       id: 0,
-      title: "Guitar Store",
+      title: "Furniture Store",
       descSubHeading:
         "Dockerized ASP.NET Core backend, using PostgreSQL, with a React + Redux frontend.",
       descParagraph:
-        "A hobby project for a webshop of an imaginery guitar store. Using .NET Core 3 preview, connecting to a PostgreSQL database with Entity Framework Core. The frontend is a React application, using Redux for its global state management.",
+        "A hobby project for a webshop of an imaginery furniture store. Using .NET Core 3 preview, connecting to a PostgreSQL database with Entity Framework Core. The frontend is a React application, using Redux for its global state management.",
       colorType: Colors.GREEN,
       icon: "fas fa-shopping-basket",
       viewOnlineLine: "",
@@ -31,10 +31,9 @@ const PortfolioWrapper = () => {
     {
       id: 2,
       title: "Personal site",
-      descSubHeading:
-        "This site exact website, state and serverless React app deployed to Zeit.",
+      descSubHeading: "This very website.",
       descParagraph:
-        "A fairly static site (no backend, no global state on frontend), deployed to Zeit, via Continuous Delivery.",
+        "A serverless, stateless React application, deployed to Zeit via Continuous Delivery.",
       colorType: Colors.PURPLE,
       icon: "fas fa-map-marker-alt",
       viewOnlineLine: "",
